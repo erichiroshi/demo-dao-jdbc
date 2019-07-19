@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Seller implements Serializable {
 
-	private int id;
+	private Integer id;
 	private String name;
 	private String email;
 	private Date birthDate;
@@ -13,13 +13,41 @@ public class Seller implements Serializable {
 
 	private Department department;
 
-	public Seller(int id, String name, String email, Date birthDate, double baseSalary, Department department) {
+	public Seller(Integer id, String name, String email, Date birthDate, double baseSalary, Department department) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
 		this.department = department;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	public double getBaseSalary() {
+		return baseSalary;
+	}
+
+	public Department getDepartment() {
+		return department;
 	}
 
 	@Override
