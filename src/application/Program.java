@@ -33,6 +33,16 @@ public class Program {
 		sellerDao.insert(new Seller(null, "Greg", "greg@email.com", new Date(), 4000.0, new Department(2, null)));
 		
 		
+		seller = sellerDao.findById(5);
+		
+		seller.setName("Donald Trump");
+		
+		System.out.println();
+		System.out.println("==== TEST 3: sellers update ====");
+		sellerDao.update(seller);
+		
+		
+		
 	}
 
 }
