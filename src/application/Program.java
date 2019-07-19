@@ -38,9 +38,12 @@ public class Program {
 		seller.setName("Donald Trump");
 		
 		System.out.println();
-		System.out.println("==== TEST 3: sellers update ====");
+		System.out.println("==== TEST 5: sellers update ====");
 		sellerDao.update(seller);
 		
+		System.out.println();
+		System.out.println("==== TEST 6: sellers delete ====");
+		sellerDao.deleteById(13);
 		
 		
 	}
